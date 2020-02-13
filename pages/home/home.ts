@@ -29,7 +29,7 @@ outracoisa(e){
 
 teste(e){
   alert('dfdfdfd');
-this.ccriarConta();
+this.criarConta();
 
 
 }
