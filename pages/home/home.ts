@@ -22,7 +22,7 @@ export class HomePage {
 outracoisa(e){
 
   this.urlVideo = this.valor;
-  this.urlVideo = "'http://rebrand.ly/dods10'";
+  this.urlVideo = "'http://rebrand.ly/CANALDU'";
 
   document.getElementById("tela").innerHTML='<vg-player><video  id="video" [vgHls]="'+ this.urlVideo +'"  controls crossorigin> </video> </vg-player><script>var video = document.getElementById("video");var hls = new Hls()hls.attachMedia(video);</script>';
 }
