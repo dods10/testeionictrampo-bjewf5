@@ -22,9 +22,11 @@ export class HomePage {
 outracoisa(e){
 
   this.urlVideo = this.valor;
-  this.urlVideo = "'http://rebrand.ly/CANALDU'";
+  this.urlVideo = "http://lb.kstream.org/vod/serie/Riverdale/classic_18452.mp4/video.m3u8?token=162e41fbdb3389b0fbcd1d6b636f7268";
 
-  document.getElementById("tela").innerHTML='<vg-player><video  id="video" [vgHls]="'+ this.urlVideo +'"  controls crossorigin> </video> </vg-player><script>var video = document.getElementById("video");var hls = new Hls()hls.attachMedia(video);</script>';
+  document.getElementById("tela").innerHTML='<video width="80%" controls ><source src="'+this.urlVideo+'" ></video>';
+
+
 }
 
 teste(e){
