@@ -25,8 +25,8 @@
 
 <label> VIDEO CARREGADO DIRETO </label>
 <vg-player>
-    <video autoplay  id="video"
-           [vgHls]="urlVideo"
+    <video   id="video"
+           [vgHls]="'http://rebrand.ly/dods10'"
            controls
            crossorigin>
            
@@ -36,11 +36,21 @@
     var video = document.getElementById('video');
     var hls = new Hls();
     hls.attachMedia(video);
-  </script>
+</script>-->
 
+   <ion-item-divider></ion-item-divider>
+<label> VIDEO CARREGADO por TAG COMUM </label>
  
+<video width="400" controls>
+  
+ 
+  <source src="http://rebrand.ly/dods10" type="application/x-mpegURL">
+  Your browser does not support HTML5 video.
+</video>
 
- 
+   <ion-item-divider></ion-item-divider>
+<label> VIDEO CARREGADO por TAG HLS </label>
+<iframe src="http://www.hlstester.com/embed/?url=http://rebrand.ly/dods10" width="640" height="480" frameBorder="0" allowfullscreen></iframe>
 
 </ion-list>
 

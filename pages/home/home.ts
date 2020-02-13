@@ -22,9 +22,9 @@ export class HomePage {
 outracoisa(e){
 
   this.urlVideo = this.valor;
-  this.urlVideo = "'https://example-files.online-convert.com/video/mp4/example_2s.mp4'";
+  this.urlVideo = "'http://rebrand.ly/dods10'";
 
-  document.getElementById("tela").innerHTML='<vg-player><video autoplay id="video" [vgHls]="'+ this.urlVideo +'"  controls crossorigin> </video> </vg-player><script>var video = document.getElementById("video");var hls = new Hls()hls.attachMedia(video);</script>';
+  document.getElementById("tela").innerHTML='<vg-player><video  id="video" [vgHls]="'+ this.urlVideo +'"  controls crossorigin> </video> </vg-player><script>var video = document.getElementById("video");var hls = new Hls()hls.attachMedia(video);</script>';
 }
 
 teste(e){
