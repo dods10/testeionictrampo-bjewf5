@@ -11,11 +11,11 @@ export class HomePage {
    
   public valor:string;
   public urlVideo:string="";
-
+  public lastVideo:HTMLVideoElement;
 
   constructor(public navCtrl: NavController) {
     this.valor = "";
-    
+    this.lastVideo =document.createElement('video');
     
   }
 
@@ -24,9 +24,22 @@ outracoisa(e){
   this.urlVideo = this.valor;
   this.urlVideo = "http://lb.kstream.org/vod/serie/Riverdale/classic_18452.mp4/video.m3u8?token=162e41fbdb3389b0fbcd1d6b636f7268";
 
-  document.getElementById("tela").innerHTML='<video width="80%" controls ><source src="'+this.urlVideo+'" ></video>';
+ /* if (this.lastVideo && this.lastVideo.) {
+         this.lastVideo.stop(); //Para o video anterior
+    }*/
 
+    var video = document.createElement('video');
 
+    video.src = this.urlVideo;
+    video.autoplay = true;
+
+    var videoContainer = document.querySelector("#tela");
+
+    videoContainer.innerHTML = ""; //Limpa elementos dentro do container ou video anterior
+
+    videoContainer.appendChild(video);
+
+    this.lastVideo = video; //Define para poder ser parado se trocar de video
 }
 
 teste(e){
