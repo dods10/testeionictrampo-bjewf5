@@ -46,7 +46,7 @@ import { Camera } from '@ionic-native/camera';
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     FileTransfer,
-  FileUploadOption,
+  
   FileTransferObject,
   File,
   Camera
