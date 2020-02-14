@@ -14,7 +14,7 @@ import { VgControlsModule } from 'videogular2/controls';
 import { VgOverlayPlayModule } from 'videogular2/overlay-play';
 import { VgBufferingModule } from 'videogular2/buffering';
 import { VgStreamingModule } from 'videogular2/streaming';
-import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+import { FileTransfer, FileUploadOptions,  FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 import { Camera } from '@ionic-native/camera';
 
@@ -44,12 +44,7 @@ import { Camera } from '@ionic-native/camera';
     TabsPage,PaginaMinha 
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FileTransfer,
-  
-  FileTransferObject,
-  File,
-  Camera
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
